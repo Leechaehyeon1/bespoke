@@ -1,0 +1,453 @@
+/* main_vis */
+.main_vis {
+  height: 100vh;
+}
+.main_vis video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_vis .txt_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 6vw;
+  font-weight: 300;
+  text-align: center;
+}
+.main_vis .txt_wrap .tit {
+  display: block;
+  line-height: 1.2;
+  overflow: hidden;
+}
+.main_vis .txt_wrap .tit:last-child {
+  font-weight: bold;
+}
+.main_vis .txt_wrap .tit span {
+  transform: translateY(100%) rotate(5deg);
+  display: block;
+}
+
+/* product_wrap */
+.product_wrap {
+  background: #fff;
+}
+.bg_txt_wrap {
+  overflow: hidden;
+}
+.product_wrap .img_wrap {
+  position: relative;
+  top: -25px;
+}
+.product_wrap .img_wrap ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.product_wrap .img_wrap ul li {
+  width: 23%;
+  float: left;
+  padding: 5px;
+}
+.product_wrap .img_wrap ul li .content_wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 7px 5px 10px 0px rgb(0 0 0 / 6%);
+  opacity: 0;
+  transform: translateY(50px);
+}
+.product_wrap .img_wrap ul li .white_bg {
+  background: #fefefe;
+  padding: 25px;
+  color: #777;
+  height: 300px;
+}
+.product_wrap .img_wrap ul li .white_bg span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.product_wrap .img_wrap ul li .white_bg span em {
+  font-weight: 500;
+}
+.product_wrap .img_wrap ul li .white_bg img {
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin: 15px 0;
+  object-fit: cover;
+}
+.product_wrap .img_wrap ul li .white_bg strong {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.product_wrap .img_wrap ul li .white_bg a {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.product_wrap .img_wrap ul li .white_bg a i {
+  display: inline-block;
+  margin-left: 7px;
+  vertical-align: top;
+  color: red;
+}
+.product_wrap .img_wrap ul li .white_bg p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.product_wrap .img_wrap ul li .img_bg {
+  position: relative;
+  height: 330px;
+}
+.product_wrap .img_wrap ul li .img_bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
+.product_wrap .img_wrap ul li .img_bg .txt_wrap  {
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  color: #fff;
+}
+.product_wrap .img_wrap ul li .img_bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product_wrap .img_wrap ul li .img_bg a.make {
+  z-index: 1;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: #fff;
+  padding: 9px 15px;
+  background: #0c1321;
+  font-size: 12px;
+  font-weight: 300;
+}
+.product_wrap .img_wrap ul li .img_bg .txt_wrap em {
+  font-size: 24px;
+  font-weight: 500;
+}
+.product_wrap .img_wrap ul li .img_bg .txt_wrap p {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.product_wrap .img_wrap ul li.second .white_bg {
+  display: table;
+  height: 275px;
+  position: relative;
+}
+.product_wrap .img_wrap ul li.second .white_bg .wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.product_wrap ul li.second .white_bg .wrap h2 {
+  margin-bottom: 10px;
+}
+.product_wrap ul li.second .white_bg .wrap p {
+  margin: 7px 0;
+}
+.product_wrap ul li.second .white_bg .wrap p em {
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+}
+.product_wrap .img_wrap ul li.second .white_bg .review {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+.product_wrap .img_wrap ul li .review i {
+  margin-right: 10px;
+}
+.product_wrap .img_wrap ul li.third {
+  width: 31%;
+}
+.product_wrap .img_wrap ul li.third .img_bg {
+  height: 240px;
+}
+.product_wrap .img_wrap ul li.last {
+  margin-top: 130px;
+}
+.product_wrap .img_wrap ul li.last .img_bg {
+  height: 350px;
+  position: relative;
+}
+.product_wrap .bg_txt {
+  font-size: 80px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #f0f0f0;
+  display: block;
+}
+.product_wrap .bg_txt.bg_txt01 {
+  transform: translateX(100%);
+}
+.product_wrap .bg_txt.bg_txt02 {
+  transform: translateX(-270%);
+}
+
+
+/* panel_wrap */
+.panel_wrap {
+  background: #fff;
+}
+.panel_wrap .inner {
+  padding: 100px 0;
+  text-align: center;
+}
+.panel_wrap .inner h2 {
+  font-size: 32px;
+  font-weight: 600;
+  transform: translateY(50%) rotate(5deg);
+  opacity: 0;
+}
+.panel_wrap .inner .panel_nav {
+  padding: 40px 0 25px;
+}
+.panel_wrap .swiper-pagination-bullet {
+  width: auto; height: auto;
+  background: none;
+  margin-right: 17px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(50%) rotate(5deg);
+}
+.panel_wrap .swiper-pagination-bullet:last-child {
+  margin: 0;
+}
+.panel_wrap .swiper-pagination-bullet-active {
+  opacity: 0.5;
+  position: relative;
+}
+.panel_wrap .swiper-pagination-bullet-active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+}
+.panel_wrap .swiper-slide-active img {
+  opacity: 0;
+  transform: translateY(50%);
+}
+.panel_wrap .panel_slide .img_wrap ul {
+ height: 700px;
+}
+.panel_wrap .panel_slide .img_wrap ul li {
+  height: 100%;
+}
+.panel_wrap .panel_slide .img_wrap ul li::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.panel_wrap .panel_slide .img_wrap ul li img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  float: left;
+  object-fit: cover;
+  padding: 10px;
+}
+.panel_wrap .inner .more {
+  display: inline-block;
+  margin-top: 55px;
+  padding: 13px 60px 13px 20px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  background: #0c1321;
+}
+.panel_wrap .inner .more i {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: calc(50% + 2px);
+  transform: translateY(-50%);
+}
+
+
+/* installation_wrap */
+.installation_wrap .installation_slide {
+  height: 100%;
+}
+.installation_wrap .installation_slide .top_wrap {
+  position: relative;
+  height: 50%;
+}
+.installation_wrap .installation_slide .bg {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.installation_wrap .installation_slide .txt_wrap {
+  padding: 70px;
+}
+.installation_wrap .installation_slide .top_wrap .txt_wrap {
+  z-index: 3;
+  width: 53%;
+  height: 110%;
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.installation_wrap .installation_slide .top_wrap .txt_wrap::after {
+  content: 'INSTALLATION';
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  color: #999;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.installation_wrap .top_wrap .txt_wrap span {
+  display: block;
+  margin: 30px 0;
+}
+.installation_wrap .top_wrap .txt_wrap span::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.installation_wrap .top_wrap .txt_wrap span img {
+  width: 33.33%;
+  float: left;
+}
+.installation_wrap .more {
+  display: inline-block;
+  padding-right: 40px;
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.installation_wrap .more i {
+  display: inline-block;
+  color: red;
+  position: absolute;
+  right: 15px;
+  top: calc(50% + 2px);
+  transform: translateY(-50%);
+}
+.installation_wrap .installation_slide .bottom_wrap {
+  position: relative;
+  height: 500px;
+}
+.installation_wrap .installation_slide .bottom_wrap .bg {
+  float: right;
+  width: 55%;
+  height: 100%;
+}
+.installation_wrap .installation_slide .bottom_wrap .txt_wrap {
+  display: table;
+  height: 100%;
+  background: #fcfcfc;
+  width: 45%;
+  padding: 0 50px;
+}
+.installation_wrap .installation_slide .bottom_wrap .wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.installation_wrap .installation_slide .top_wrap h2 {
+  text-align: right;
+}
+.installation_wrap .installation_slide h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.installation_wrap .installation_slide p {
+  padding: 30px 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.installation_wrap .installation_slide .swiper-pagination {
+  bottom: 3%;
+}
+.installation_wrap .swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+}
+.installation_wrap .swiper-pagination-bullet-active {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+
+/* reserve_wrap */
+.reserve_wrap {
+  background: url(../img/reservation/reservation.webp) no-repeat center bottom fixed;
+  background-size: cover;
+  padding: 130px 0;
+}
+.reserve_wrap .inner .ani {
+  opacity: 0;
+  transform: translateY(50%) rotate(5deg);
+}
+.reserve_wrap .tit_wrap {
+  padding-bottom: 50px;
+  color: #fff;
+}
+.reserve_wrap .tit_wrap h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.reserve_wrap .tit_wrap p {
+  font-size: 14px;
+  line-height: 1.35;
+}
+.reserve_wrap form {
+  width: 400px;
+}
+.reserve_wrap form fieldset {
+  position: relative;
+}
+.reserve_wrap form .txt_area {
+  width: 400px;
+  padding: 14px;
+  height: 48px;
+  border: 1px solid #333;
+  outline: none;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+.reserve_wrap form fieldset .btn {
+  display: inline-block;
+  position: absolute;
+  right: 14px;
+  color: #333;
+  top: calc(50% + 2px);
+  transform: translateY(-50%);
+}

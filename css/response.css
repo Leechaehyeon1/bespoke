@@ -1,0 +1,327 @@
+@media screen and (max-width: 1300px) {
+  /* header */
+  /* main */
+  .product_wrap .inner {
+    padding: 0 30px;
+  }
+  .panel_wrap .inner {
+    padding: 100px 30px;
+  }
+
+  .reserve_wrap {
+    padding: 130px 30px;
+  }
+
+  /* footer */
+  footer .footer {
+    padding: 80px 30px 60px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .product_wrap .img_wrap ul li.first {
+    width: 50%;
+  }
+  .product_wrap .img_wrap ul li.second {
+    width: 50%;
+  }
+  .product_wrap .img_wrap ul li.first .content_wrap,
+  .product_wrap .img_wrap ul li.second .content_wrap {
+    margin-bottom: 0;
+  }
+  .product_wrap .img_wrap ul li.second .img_bg {
+    height: 300px;
+  }
+  .product_wrap .img_wrap ul li.third {
+    width: 60%;
+  }
+  .product_wrap .img_wrap ul li.last {
+    margin-top: 0;
+    width: 40%;
+  }
+
+  .installation_wrap .installation_slide .top_wrap .txt_wrap {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header h1 {
+    left: 30px;
+  }
+  .header .gnb {
+    position: fixed;
+    transform: translateY(0);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  .header .gnb.show {
+    visibility: visible;
+  }
+  .header .gnb .gnb_bg {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+  }
+  .header .gnb .gnb_bg.gnb_bg01 {
+    top: 0;
+    background: #c4a061;
+    width: 0;
+  }
+  .header .gnb .gnb_bg.gnb_bg02 {
+    top: 50%;
+    background: #7b6d66;
+    width: 0;
+  }
+  .header .gnb .gnb_bg.gnb_bg03 {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #5a7367;
+    height: 0;
+  }
+
+  .header .gnb.show .gnb_bg.gnb_bg01 {
+    width: 100%;
+    transition: 0.5s cubic-bezier(0, 0.14, 0, 0.69);
+  }
+  .header .gnb.show .gnb_bg.gnb_bg02 {
+    width: 100%;
+    transition: 0.5s 0.2s cubic-bezier(0, 0.14, 0, 0.69);
+  }
+  .header .gnb.show .gnb_bg.gnb_bg03 {
+    height: 100%;
+    transition: 0.5s 0.5s cubic-bezier(0, 0.14, 0, 0.69);
+  }
+
+  .header .gnb.hide .gnb_bg.gnb_bg01 {
+    width: 0%;
+    transition: 0.5s 0.5s cubic-bezier(0, 0.14, 0, 0.69);
+  }
+  .header .gnb.hide .gnb_bg.gnb_bg02 {
+    width: 0%;
+    transition: 0.5s 0.2s cubic-bezier(0, 0.14, 0, 0.69);
+  }
+  .header .gnb.hide .gnb_bg.gnb_bg03 {
+    height: 0%;
+    transition: 0.5s cubic-bezier(0, 0.14, 0, 0.69);
+  }
+
+  .header.on .gnb {
+    color: #fff;
+  }
+  .header .gnb ul {
+    position: relative;
+  }
+  .header .gnb li {
+    padding: 10px 0;
+    float: none;
+  }
+  .header .gnb li a {
+    font-size: 38px;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  .header .menu_btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+  }
+  .header .menu_btn i {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    right: 5px;
+    background: #fff;
+  }
+  .header .menu_btn i:nth-child(1) {
+    top: 14px;
+  }
+  .header .menu_btn i:nth-child(2) {
+    top: 24px;
+    width: 15px;
+  }
+  .header.on .menu_btn i {
+    background: #000;
+  }
+
+  .footer .service > div.f_logo {
+    float: none; margin-bottom: 50px;
+  }
+  .footer .service {
+    padding: 0;
+  }
+  .footer .f_logo h2 {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+  .header h1 {
+    width: 110px;
+    height: 22px;
+  }
+  .header.on h1 {
+    width: 110px;
+    height: 22px;
+  }
+
+  .main_vis .txt_wrap {
+    font-size: 10vw;
+  }
+  .main_vis .txt_wrap .tit {
+    white-space: nowrap;
+  }
+
+  .product_wrap .inner {
+    padding: 0 10px;
+  }
+  .product_wrap .img_wrap ul li.first {width:100%;}
+  .product_wrap .img_wrap ul li.second {width:100%;}
+  .product_wrap .img_wrap ul li.third {width:100%;}
+  .product_wrap .img_wrap ul li.third .content_wrap:last-child {
+    margin: 0;
+  }
+  .product_wrap .img_wrap ul li.last {
+    width: 100%;
+  }
+  .product_wrap .img_wrap ul li.last .img_bg {
+    height: 200px;
+  }
+  .product_wrap .img_wrap ul li .img_bg {
+    height: 120px;
+  }
+
+  .panel_wrap .inner {
+    padding: 100px 10px;
+  }
+  .panel_wrap .inner h2{
+    font-size: 24px;
+  }
+  .panel_wrap .swiper-pagination-bullet {
+    margin-bottom: 10px;
+  }
+  .panel_wrap .panel_slide .img_wrap ul li img {
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+  }
+
+  .installation_wrap .installation_slide .bg {
+    height: 300px;
+  }
+  .installation_wrap .installation_slide .top_wrap .txt_wrap {
+    padding: 30px 10px;
+  }
+  .installation_wrap .installation_slide .top_wrap .txt_wrap::after {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .installation_wrap .installation_slide .top_wrap h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .installation_wrap .installation_slide .bottom_wrap {
+    height: auto;
+  }
+  .installation_wrap .installation_slide .bottom_wrap .bg {
+    height: 300px;
+    width: 100%;
+    float: none;
+  }
+  .installation_wrap .installation_slide .bottom_wrap .txt_wrap {
+    padding: 30px 10px;
+    width: 100%;
+    height: 444px;
+    box-sizing: border-box;
+  }
+  .installation_wrap .installation_slide h2 {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .installation_wrap .installation_slide .swiper-pagination {
+    bottom: 1.5%;
+  }
+  .installation_wrap .swiper-pagination-bullet {
+    opacity: 0.2;
+    background: #000;
+  }
+  .installation_wrap .swiper-pagination-bullet-active {
+    background: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .reserve_wrap .tit_wrap h2 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .reserve_wrap form {
+    width: 100%;
+  }
+  .reserve_wrap form .txt_area {
+    width: 100%;
+  }
+
+  footer .footer {
+    padding: 50px 15px 50px;
+  }
+  .footer .f_logo h2 {
+    width: 110px;
+    height: 22px;
+  }
+  .footer .service > div.nav  {
+    width: 100%;
+  }
+  .footer .service > div.nav > ul > li {
+    width: 50%;
+    float: left;
+    margin-bottom: 50px;
+  }
+  .footer .service > div.nav > ul > li:last-child {
+    clear: both;
+  }
+  .footer .service > div.info h3 {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .footer .service > div.nav > ul ul li a {
+    font-size: 11px;
+  }
+  .footer .copyright {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .service > div.info {
+    width: 100%;
+  }
+  .footer .service > div.info h3 {
+    font-size: 14px;
+  }
+}
