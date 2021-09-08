@@ -3659,7 +3659,7 @@
     passiveListeners: true,
 
     // NS
-    containerModifierClass: 'swiper-container-', // NEW
+    containerModifierClass: 'swiper-', // NEW
     slideClass: 'swiper-slide',
     slideBlankClass: 'swiper-slide-invisible-blank',
     slideActiveClass: 'swiper-slide-active',
@@ -8033,7 +8033,7 @@
       thumbs: {
         swiper: null,
         slideThumbActiveClass: 'swiper-slide-thumb-active',
-        thumbsContainerClass: 'swiper-container-thumbs',
+        thumbsContainerClass: 'swiper-thumbs',
       },
     },
     create: function create() {
